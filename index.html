@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuatumLab</title>
+    <link rel="stylesheet" href="Quantum.css">
+    <script src="Quantum.js"></script>
+    
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quantum Lab - Learn Quantum Computing</title>
+
+    <link rel="stylesheet" href="Quantum.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar">
+
+        <div class="logo-area">
+
+            <div class="logo-icon">
+                ⚛
+            </div>
+
+            <div class="logo-text">
+                <h2>QUANTUM <span>LAB</span></h2>
+
+                <p>
+                    LEARN • EXPLORE • BUILD • GROW
+                </p>
+            </div>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="#topics">
+                Learning Topics
+                <span class="arrow">⌄</span>
+            </a>
+
+            <a href="#challenges" class="challenge-link">
+                <span class="yellow-dot"></span>
+                    PlayGround      
+            </a>
+
+            <a href="#ai">
+                AI Reasoning
+                <span class="new-badge">NEW</span>
+            </a>
+
+        </nav>
+
+
+        <div class="nav-buttons">
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-badge">
+
+            <span class="cyan-dot"></span>
+
+            NEXT-GEN QUANTUM LEARNING WORKFLOW
+
+            <span class="divider"></span>
+
+            <span class="badge-text">
+                Interactive Missions & AI Diagnostic
+            </span>
+
+        </div>
+
+
+        <h1>
+
+            Master Quantum Computing
+
+            <br>
+
+            Through
+            <span class="gradient-text">
+                Hands-On Challenges
+            </span>
+
+            <br>
+
+            & AI Feedback
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Experience the complete quantum learning cycle:
+            explore visual simulations, write quantum circuits,
+            solve interactive missions, and validate your conceptual
+            understanding with automated AI reasoning evaluations.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <button
+                class="mission-button"
+                onclick="launchMission()">
+
+                ⚡ &nbsp; Launch Interactive Mission
+
+            </button>
+
+
+            <button
+                class="cycle-button"
+                onclick="exploreCycle()">
+
+                ▣ &nbsp; Explore 4-Step Cycle
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT QUANTUM LAB ================= -->
+
+    <section class="about-section">
+
+        <div class="about-content">
+
+            <div class="about-icon">
+                🎓
+            </div>
+
+
+            <div class="about-text">
+
+                <span class="section-label">
+                    ABOUT QUANTUMLAB
+                </span>
+
+                <h2>
+                    A web-based interactive platform
+                    <br>
+                    for learning quantum computing.
+                </h2>
+
+                <p>
+                    Log in with your email and start your journey with
+                    Theory, Quantum Lab and Quiz — all in one place.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="learning-flow">
+
+
+            <!-- LEARN -->
+
+            <div class="flow-item">
+
+                <div class="flow-icon blue">
+                    📖
+                </div>
+
+                <h3 class="blue-text">
+                    Learn
+                </h3>
+
+                <p>
+                    Structured theory
+                    <br>
+                    with videos & concepts.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">
+                →
+            </div>
+
+
+            <!-- BUILD -->
+
+            <div class="flow-item">
+
+                <div class="flow-icon purple">
+                    ✣
+                </div>
+
+                <h3 class="purple-text">
+                    Build
+                </h3>
+
+                <p>
+                    Drag, drop and create
+                    <br>
+                    your quantum circuits.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">
+                →
+            </div>
+
+
+            <!-- SIMULATE -->
+
+            <div class="flow-item">
+
+                <div class="flow-icon green">
+                    ▷
+                </div>
+
+                <h3 class="green-text">
+                    Simulate
+                </h3>
+
+                <p>
+                    See your circuit
+                    <br>
+                    in action visually.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">
+                →
+            </div>
+
+
+            <!-- EXPLAIN -->
+
+            <div class="flow-item">
+
+                <div class="flow-icon pink">
+                    ♧
+                </div>
+
+                <h3 class="pink-text">
+                    Explain
+                </h3>
+
+                <p>
+                    Answer with reasoning
+                    <br>
+                    — not just clicks.
+                </p>
+
+            </div>
+
+
+            <div class="flow-arrow">
+                →
+            </div>
+
+
+            <!-- QUIZ -->
+
+            <div class="flow-item">
+
+                <div class="flow-icon yellow">
+                    ☑
+                </div>
+
+                <h3 class="yellow-text">
+                    Quiz
+                </h3>
+
+                <p>
+                    Test your understanding
+                    <br>
+                    with concept-based questions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TOPICS ================= -->
+
+    <section class="topics-section" id="topics">
+
+        <div class="section-heading">
+
+            <span class="small-badge">
+                ⚛ LEARNING PATHS
+            </span>
+
+            <h2>
+                Choose Your Learning Topic
+            </h2>
+
+            <p>
+                Follow structured roadmaps designed by
+                quantum researchers.
+            </p>
+
+        </div>
+
+
+        <div class="topic-container">
+
+
+            <!-- BEGINNER -->
+
+            <div class="topic-card beginner">
+
+                <div class="topic-header">
+
+                    <span class="topic-icon">
+                        △
+                    </span>
+
+                    <small>
+                        TRACK 01
+                    </small>
+
+                    <h3>
+                        Beginner
+                    </h3>
+
+                </div>
+
+
+                <ol>
+
+                    <li>
+                        Quantum Computing
+                    </li>
+
+                    <li>
+                        Bit (Classical foundations)
+                    </li>
+
+                    <li>
+                        Qubit Representation
+                    </li>
+
+                    <li>
+                        Superposition Principle
+                    </li>
+
+                    <li>
+                        Measurement Collapse
+                    </li>
+
+                </ol>
+
+
+                <button onclick="selectTrack('Beginner')">
+                    Start Beginner Track
+                </button>
+
+            </div>
+
+
+
+            <!-- INTERMEDIATE -->
+
+            <div class="topic-card intermediate">
+
+                <div class="topic-header">
+
+                    <span class="topic-icon">
+                        ◉
+                    </span>
+
+                    <small>
+                        TRACK 02
+                    </small>
+
+                    <h3>
+                        Intermediate
+                    </h3>
+
+                </div>
+
+
+                <ol>
+
+                    <li>
+                        Quantum Gates (H, X, Z, CNOT)
+                    </li>
+
+                    <li>
+                        Circuits & Multi-Qubit Systems
+                    </li>
+
+                    <li>
+                        Quantum Entanglement (Bell States)
+                    </li>
+
+                    <li>
+                        Phase & Wave Interference
+                    </li>
+
+                </ol>
+
+
+                <button onclick="selectTrack('Intermediate')">
+                    Start Intermediate Track
+                </button>
+
+            </div>
+
+
+
+            <!-- ADVANCED -->
+
+            <div class="topic-card advanced">
+
+                <div class="topic-header">
+
+                    <span class="topic-icon">
+                        ⚡
+                    </span>
+
+                    <small>
+                        TRACK 03
+                    </small>
+
+                    <h3>
+                        Advanced
+                    </h3>
+
+                </div>
+
+
+                <ol>
+
+                    <li>
+                        Algorithms (Grover & Shor)
+                    </li>
+
+                    <li>
+                        Quantum Cryptography & QKD
+                    </li>
+
+                    <li>
+                        Quantum Machine Learning (QML)
+                    </li>
+
+                    <li>
+                        Real-World Quantum Applications
+                    </li>
+
+                </ol>
+
+
+                <button onclick="selectTrack('Advanced')">
+                    Start Advanced Track
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= JOURNEY ================= -->
+
+    <section class="journey-section">
+
+        <div class="journey-content">
+
+            <div class="journey-icon">
+                ♙
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Your Learning Journey
+                </h3>
+
+                <p>
+                    Understand → Practice → Think → Improve →
+                    <strong>Master Quantum!</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="journey-message">
+
+            <span>
+                ●
+            </span>
+
+            Build a deeper understanding with AI reasoning
+
+        </div>
+
+
+        <button onclick="beginJourney()">
+            Begin Journey
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-left">
+
+            <strong>
+                QUANTUM LAB
+            </strong>
+
+            <span>
+                © 2025 Quantum Lab Inc. All rights reserved.
+            </span>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            Documentation
+            &nbsp;&nbsp;&nbsp;
+            Quantum API
+            &nbsp;&nbsp;&nbsp;
+            Bloch Sphere Sim
+            &nbsp;&nbsp;&nbsp;
+            AI Research Notes
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= POPUP ================= -->
+
+    <div class="popup" id="popup">
+
+        <div class="popup-box">
+
+            <button
+                class="close-popup"
+                onclick="closePopup()">
+
+                ×
+
+            </button>
+
+
+            <h2 id="popupTitle">
+                Quantum Lab
+            </h2>
+
+
+            <p id="popupMessage">
+                Welcome to Quantum Lab.
+            </p>
+
+
+            <button
+                class="popup-button"
+                onclick="closePopup()">
+
+                Continue
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="Quantum.js"></script>
+
+</body>
+</html>
+</body>
+</html>
